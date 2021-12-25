@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.main_container {
+  height: 100vh;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+.section1 {
+  background-image: url('https://mocah.org/uploads/posts/3002440-2000x1000-nebula-planet-sci-fi-space-stars.jpg');
+}
+.section2 {
+  background-image: url('https://images2.alphacoders.com/787/787604.jpg');
+}
+.section3 {
+  background-image: url('https://images4.alphacoders.com/909/909591.jpg');
+}
+.section4 {
+  background-image: url('https://images.alphacoders.com/910/910936.jpg');
+}
+.trasnform_section {
+  text-align: center;
+  padding: 20px;
+}
+.trasnform_section > section {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  grid-auto-rows: 300px;
+  gap: 20px;
+}
+.trasnform_section > section > div {
+  border: 1px solid black;
+  border-radius: 20px;
+  transition-duration: 0.4s;
+}
+.trasnform_section > section > div:hover {
+  transform: scale(1.1);
+}
